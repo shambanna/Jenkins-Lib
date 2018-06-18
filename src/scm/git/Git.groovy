@@ -7,5 +7,6 @@ class Git implements Serializable{
   }
   void test(){
   this.script.println "test is success"
+   this.script.git
   }
 }
