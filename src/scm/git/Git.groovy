@@ -7,6 +7,6 @@ class Git implements Serializable{
   }
   void test(){
   this.script.println "test is success"
-   git https://github.com/jglick/simple-maven-project-with-tests.git
+  this.script.git(url: https://github.com/jglick/simple-maven-project-with-tests.git, branch: master)
   }
 }
