@@ -6,6 +6,6 @@ class Maven implements Serializable{
     this.script = script;
   }
   void test(){
-  this.script.sh "mvn clean install -f helloworld-jsp/"
+  this.script.sh "/usr/local/Cellar/maven/3.5.3/libexec/bin/mvn clean install -f helloworld-jsp/"
   }
 }
