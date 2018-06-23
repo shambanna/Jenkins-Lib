@@ -11,7 +11,7 @@ class Yaml implements Serializable{
   def yaml = this.script.libraryResource "vm.yaml"
   String path = "../"+this.script.env.JOB_NAME+"@libs/shared-lib/resources/vm.yaml"
   this.script.println path
-  appBuild = new Yaml().load("../"+this.script.env.JOB_NAME+"@libs/shared-lib/resources/vm.yaml")
+  appBuild = new Yaml().load("../../"+this.script.env.JOB_NAME+"@libs/shared-lib/resources/vm.yaml")
   this.script.println appBuild
 
   }
