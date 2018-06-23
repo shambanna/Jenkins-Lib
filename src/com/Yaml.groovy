@@ -8,7 +8,7 @@ class Yaml implements Serializable{
     this.script = script;
   }
   void test(){
-  List projects = new Yaml().load(("vm.yaml" as File).text)
+  List projects = new Yaml().load(("resources/vm.yaml" as File).text)
   this.script.println projects
 
   }
