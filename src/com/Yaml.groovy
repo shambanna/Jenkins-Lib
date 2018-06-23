@@ -12,7 +12,7 @@ class Yaml implements Serializable{
   this.script.sh "pwd"
   def yaml = this.script.libraryResource "vm.yaml"
   appBuild = new Yaml().load(yaml)
-  ##List projects = new Yaml().load(("resources/vm.yaml" as File).text)
+  //List projects = new Yaml().load(("resources/vm.yaml" as File).text)
   this.script.println appBuild
 
   }
