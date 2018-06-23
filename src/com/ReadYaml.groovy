@@ -2,9 +2,9 @@ package com;
 @Grab('org.yaml:snakeyaml:1.17')
 import org.yaml.snakeyaml.Yaml
 
-class Yaml implements Serializable{
+class ReadYaml implements Serializable{
  def script; 
-  Yaml(script){
+  ReadYaml(script){
     this.script = script;
   }
   void test(){
