@@ -9,7 +9,7 @@ class ReadYaml implements Serializable{
   }
   void test(){
   def yaml = this.script.libraryResource "vm.yaml"
-  appBuild = new Yaml().load(yaml)
+  def appBuild = new Yaml().load(yaml)
   this.script.println appBuild
 
   }
