@@ -11,6 +11,7 @@ class ReadYaml implements Serializable{
   def yaml = this.script.libraryResource "vm.yaml"
   def appBuild = new Yaml().load(yaml)
   this.script.println appBuild
+  this.script.println groovy.json.JsonOutput.toJson(appBuild)
 
   }
 }
